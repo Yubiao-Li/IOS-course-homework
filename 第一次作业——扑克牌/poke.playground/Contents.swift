@@ -23,13 +23,13 @@ enum Value:Int {
     func simpleDescription() -> String {
         switch self {
         case .Ace:
-            return "ace"
+            return "A"
         case .Jack:
-            return "jack"
+            return "J"
         case .Queen:
-            return "queen"
+            return "Q"
         case .King:
-            return "king"
+            return "K"
         default:
             return String(self.rawValue)
         }
@@ -92,6 +92,6 @@ func deal(numOfPeople:Int,numOfCard:Int)-> [[String]]{
 // 发牌，获取每个人得到的牌的数组
 let result = deal(numOfPeople: 2, numOfCard: 54)
 for i in 0..<result.count{
-    print("第 \(i) 个人的牌:")
+    print("第 \(i + 1) 个人的牌:")
     print(result[i])
 }
