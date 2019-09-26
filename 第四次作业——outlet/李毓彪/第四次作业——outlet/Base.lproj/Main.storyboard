@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="第四次作业__outlet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="euO-YU-0WL">
+                                <rect key="frame" x="30" y="302" width="354" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="userNameChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="6Ty-5j-ko8"/>
+                                </connections>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mng-K0-1Vt">
+                                <rect key="frame" x="87" y="100" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ckx-0R-om3"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hl9-Yw-23j">
+                                <rect key="frame" x="30" y="387" width="354" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请先登录" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdS-7G-SVw">
+                                <rect key="frame" x="172" y="256" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPq-d3-WLv">
+                                <rect key="frame" x="169" y="458" width="76" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="LSb-J2-GJA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="loginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11K-5U-MJv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hl9-Yw-23j" firstAttribute="centerX" secondItem="euO-YU-0WL" secondAttribute="centerX" id="0MD-24-sgV"/>
+                            <constraint firstItem="euO-YU-0WL" firstAttribute="centerX" secondItem="Mng-K0-1Vt" secondAttribute="centerX" id="1Fh-lA-DKy"/>
+                            <constraint firstItem="euO-YU-0WL" firstAttribute="top" secondItem="qdS-7G-SVw" secondAttribute="bottom" constant="25" id="8Sr-Pi-agp"/>
+                            <constraint firstItem="GPq-d3-WLv" firstAttribute="top" secondItem="hl9-Yw-23j" secondAttribute="bottom" constant="41" id="9Bv-vn-Pz7"/>
+                            <constraint firstItem="Mng-K0-1Vt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="CuH-8d-NMY"/>
+                            <constraint firstItem="hl9-Yw-23j" firstAttribute="top" secondItem="euO-YU-0WL" secondAttribute="bottom" constant="55" id="Kmp-Gz-5ud"/>
+                            <constraint firstItem="Mng-K0-1Vt" firstAttribute="centerX" secondItem="GPq-d3-WLv" secondAttribute="centerX" id="Ofk-WC-dvI"/>
+                            <constraint firstItem="euO-YU-0WL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hl9-Yw-23j" secondAttribute="trailing" id="XGd-M9-01J"/>
+                            <constraint firstItem="euO-YU-0WL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hl9-Yw-23j" secondAttribute="leading" id="Yii-MG-R7G"/>
+                            <constraint firstItem="Mng-K0-1Vt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="d7E-pn-E54"/>
+                            <constraint firstItem="qdS-7G-SVw" firstAttribute="centerX" secondItem="Mng-K0-1Vt" secondAttribute="centerX" id="ebW-fU-Vx9"/>
+                            <constraint firstItem="euO-YU-0WL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gWu-FH-hWM"/>
+                            <constraint firstItem="GPq-d3-WLv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="169" id="gtD-zC-iHH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qdS-7G-SVw" secondAttribute="trailing" id="o7s-WE-Til"/>
+                            <constraint firstItem="Mng-K0-1Vt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q2X-VB-nqE"/>
+                            <constraint firstItem="qdS-7G-SVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wT4-hk-p2b"/>
+                            <constraint firstItem="qdS-7G-SVw" firstAttribute="top" secondItem="Mng-K0-1Vt" secondAttribute="bottom" constant="28" id="yek-jM-Ln8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hintLabel" destination="qdS-7G-SVw" id="Qyj-pO-fm2"/>
+                        <outlet property="passwdTextField" destination="hl9-Yw-23j" id="s9Y-fP-bla"/>
+                        <outlet property="userNameTextField" destination="euO-YU-0WL" id="Dm6-Ek-55L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+</document>
