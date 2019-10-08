@@ -38,7 +38,7 @@
                                 <rect key="frame" x="30" y="387" width="354" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请先登录" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdS-7G-SVw">
                                 <rect key="frame" x="172" y="256" width="70" height="21"/>
@@ -47,9 +47,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPq-d3-WLv">
-                                <rect key="frame" x="169" y="458" width="76" height="62"/>
+                                <rect key="frame" x="162" y="458" width="90" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="LSb-J2-GJA"/>
+                                    <constraint firstAttribute="width" constant="90" id="pdH-CY-7Pi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="登录"/>
@@ -72,10 +73,8 @@
                             <constraint firstItem="Mng-K0-1Vt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="d7E-pn-E54"/>
                             <constraint firstItem="qdS-7G-SVw" firstAttribute="centerX" secondItem="Mng-K0-1Vt" secondAttribute="centerX" id="ebW-fU-Vx9"/>
                             <constraint firstItem="euO-YU-0WL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gWu-FH-hWM"/>
-                            <constraint firstItem="GPq-d3-WLv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="169" id="gtD-zC-iHH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qdS-7G-SVw" secondAttribute="trailing" id="o7s-WE-Til"/>
                             <constraint firstItem="Mng-K0-1Vt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q2X-VB-nqE"/>
-                            <constraint firstItem="qdS-7G-SVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wT4-hk-p2b"/>
                             <constraint firstItem="qdS-7G-SVw" firstAttribute="top" secondItem="Mng-K0-1Vt" secondAttribute="bottom" constant="28" id="yek-jM-Ln8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
